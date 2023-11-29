@@ -1,6 +1,6 @@
 // Load balancer Function
 export default function loadBalancer(chinaDownload, USDownload) {
   return Promise
-   .race([chinaDownload, USDownload])
-   .then((resolve) => resolve);
+    .race([chinaDownload, USDownload])
+    .then((resolve) => resolve);
 }
