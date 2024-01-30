@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?');
 
 rl.on('line', (input) => {
   if (input.trim() === '') {
@@ -17,6 +17,6 @@ rl.on('line', (input) => {
   }
 });
 
-rl.on('close', () => {
-  console.log('\nThis important software is now closing');
+rl.on('end', () => {
+  process.stdout.write('\nThis important software is now closing');
 });
