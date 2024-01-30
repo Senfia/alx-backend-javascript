@@ -52,7 +52,7 @@ const app = http.createServer(async (req, res) => {
     if (req.method === 'GET') {
       if (req.url === '/') {
         // Handling the root path
-        const responseText = 'Hello Holberton School!\n';
+        const responseText = 'Hello Holberton School!';
         res.writeHead(200, { 'Content-Type': 'text/plain', 'Content-Length': responseText.length });
         res.end(responseText);
       } else if (req.url === '/students') {
